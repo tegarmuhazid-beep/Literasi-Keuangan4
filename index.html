@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Corner - Home</title>
+  <style>
+    /* ======== WARNA UTAMA ======== */
+    :root {
+      --primary: #9a8c98;   /* ungu pastel */
+      --secondary: #a5d8ff; /* biru pastel */
+      --accent: #f7cad0;    /* peach pastel */
+      --text-dark: #3a3a3a;
+      --text-light: #555;
+      --bg-gradient: linear-gradient(135deg, #fff1f1, #e3f2fd, #f8edeb);
+    }
+
+    /* ======== BODY ======== */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: var(--bg-gradient);
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    /* ======== HEADER ======== */
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: var(--text-light);
+      margin-bottom: 50px;
+    }
+
+    /* ======== MENU TOMBOL VERTIKAL ======== */
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .menu a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      font-size: 17px;
+      border-radius: 15px;
+      width: 100%;
+      padding: 18px 25px;
+      background: linear-gradient(135deg, #ffffff, #fef4f9);
+      border: 2px solid transparent;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .menu a:nth-child(1) { background: linear-gradient(135deg, #f7cad0, #fff1f1); }
+    .menu a:nth-child(2) { background: linear-gradient(135deg, #a5d8ff, #e3f2fd); }
+    .menu a:nth-child(3) { background: linear-gradient(135deg, #cdeac0, #f0fff4); }
+    .menu a:nth-child(4) { background: linear-gradient(135deg, #f9dcc4, #fef9ef); }
+
+    .menu a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+      border-color: var(--secondary);
+    }
+
+    /* ======== ANIMASI MASUK ======== */
+    .menu a {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.6s ease forwards;
+    }
+
+    .menu a:nth-child(1) { animation-delay: 0.2s; }
+    .menu a:nth-child(2) { animation-delay: 0.4s; }
+    .menu a:nth-child(3) { animation-delay: 0.6s; }
+    .menu a:nth-child(4) { animation-delay: 0.8s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ======== FOOTER ======== */
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    /* ======== RESPONSIF ======== */
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2em; }
+      .menu {
+        max-width: 260px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Finance Corner</h1>
+  <p>Sahabat Cerdas Dalam Mengelola Keuangan Digital</p>
+
+  <div class="menu">
+    <a href="PROFIL.HTML">📘 Profil</a>
+    <a href="literasi.html">📗 Literasi Keuangan</a>
+    <a href="tantangan.html">💪 Tantangan Berhemat</a>
+    <a href="bunga.html">💸 Menghitung Bunga Utang Digital</a>
+  </div>
+
+  <footer>© 2025 Finance Corner</footer>
+</body>
+</html>
